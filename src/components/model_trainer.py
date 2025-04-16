@@ -67,7 +67,7 @@ class ModelTrainer:
                 model = list(models.values())[i]
 
 
-                model.fit(X_train, y_train)  # Train model
+                model.fit(X_train, y_train) # Train model
 
 
                 y_train_pred = model.predict(X_train)
