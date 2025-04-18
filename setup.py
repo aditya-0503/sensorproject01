@@ -1,7 +1,7 @@
 from setuptools import find_packages,setup #setuptools is a package that provides tools for packaging python projects.
 from typing import List
 
-HYPEN_E_DOT='e.'
+HYPEN_E_DOT='-e.'
 
 def get_requirements(file_path:str)->List[str]:
     requirements=[]

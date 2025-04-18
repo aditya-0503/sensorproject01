@@ -3,7 +3,7 @@ import pandas as pd
 import json
 
 #url
-url ="mongodb+srv://aditya:98237899928@cluster0.9z5tzkb.mongodb.net/?retryWrites=true&w=majority"
+url ="mongodb+srv://aditya:98237899928@cluster0.9z5tzkb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 #create a new client and connect to server
 client = MongoClient(url)
@@ -12,7 +12,7 @@ client = MongoClient(url)
 DATABASE_NAME = "pwskills"
 COLLECTION_NAME = "waferfault"
 
-df = pd.read_csv("D:\Sensor Project\notebooks\wafer_23012020_041211.csv")
+df = pd.read_csv("C:\Sensor Project\notebooks\wafer_23012020_041211.csv")
 
 df = df.drop("Unnamed: 0", axis = 1)
 
